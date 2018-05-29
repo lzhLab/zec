@@ -13,14 +13,14 @@ Dependency
 --------------------------------------------------
 MPI: tested using MPICH 3.1.3 and OpenMPI 1.8.4
 
-(Included dependent libraries)
-Boost library (http://www.boost.org)
-Google sparsehash (https://code.google.com/p/sparsehash)
-klib (https://github.com/attractivechaos/klib)
-KMC (http://sun.aei.polsl.pl/REFRESH/index.php?page=projects&project=kmc&subpage=about)
-murmurhash3 (https://code.google.com/p/smhasher)
-zlib (http://zlib.net)
-pigz (http://zlib.net/pigz)
+(Included dependent libraries)<br>
+Boost library (http://www.boost.org)<br>
+Google sparsehash (https://code.google.com/p/sparsehash)<br>
+klib (https://github.com/attractivechaos/klib)<br>
+KMC (http://sun.aei.polsl.pl/REFRESH/index.php?page=projects&project=kmc&subpage=about)<br>
+murmurhash3 (https://code.google.com/p/smhasher)<br>
+zlib (http://zlib.net)<br>
+pigz (http://zlib.net/pigz)<br>
 
 --------------------------------------------------
 How to Install ZEC 

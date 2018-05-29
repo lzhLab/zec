@@ -31,33 +31,33 @@ Type make.
 How to Run ZEC 
 --------------------------------------------------
 Single-end reads or merged paired-end reads
-> ./zec -read &#60;fastq&#62; -prefix <output prefix> -kmerlength <k-mer length>
-<fastq>        : fastq file name
-<output prefix>: <output directory name>/<file prefix>
-<k-mer length> : k-mer length (odd number)
+> ./zec -read &#60;fastq&#62; -prefix &#60;output prefix&#62; -kmerlength &#60;k-mer length&#62;
+&#60;fastq&#62;        : fastq file name
+&#60;output prefix&#62;: &#60;output directory name&#62;/&#60;file prefix&#62;
+&#60;k-mer length&#62; : k-mer length (odd number)
 
 Paired-end reads
-> ./zec -read1 <forward fastq> -read2 <reverse fastq> -prefix <output prefix> -kmerlength <k-mer length>
-<forward fastq>: first read file of a paired-end fastq file
-<reverse fastq>: second read file of a paired-end fastq file
-<output prefix>: <output directory name>/<file prefix>
-<k-mer length> : k-mer length (odd number)
+> ./zec -read1 &#60;forward fastq&#62; -read2 &#60;reverse fastq&#62; -prefix &#60;output prefix&#62; -kmerlength &#60;k-mer length&#62;
+&#60;forward fastq&#62;: first read file of a paired-end fastq file
+&#60;reverse fastq&#62;: second read file of a paired-end fastq file
+&#60;output prefix&#62;: &#60;output directory name&#62;/&#60;file prefix&#62;
+&#60;k-mer length&#62; : k-mer length (odd number)
 
 Run zec with no option to see the entire options.
 
 Running ZEC on multiple nodes using MPI
 Launch single process on a node and bind the processes to their nodes
 Ex) MPICH 3.1.3 Hydra Version
-> mpirun -ppn 1 -bind-to board ./zec <options>
+> mpirun -ppn 1 -bind-to board ./zec &#60;options&#62;
 
 --------------------------------------------------
 Choosing k-mer length
 --------------------------------------------------
 Our empirical analysis shows that the k value that satisfies the following two conditions usually generates the results close to the best one:
-1) Ns / 4^k <= 0.0001 where Ns represents the number of unique solid k-mers (ZEC reports Ns).
+1) Ns / 4^k &#60;= 0.0001 where Ns represents the number of unique solid k-mers (ZEC reports Ns).
 2) Number of corrected bases becomes the maximum at the chosen k value, which means you need to increase k as long as the number of corrected reads increases.
 
 --------------------------------------------------
 Bug Reports:
 --------------------------------------------------
-Dr. Zhao <s080011@e.ntu.edu.sg>
+Dr. Zhao &#60;s080011 AT e.ntu.edu.sg&#62;

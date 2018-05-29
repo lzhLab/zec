@@ -31,23 +31,23 @@ Type make.
 How to Run ZEC 
 --------------------------------------------------
 Single-end reads or merged paired-end reads
-> ./zec -read &#60;fastq&#62; -prefix &#60;output prefix&#62; -kmerlength &#60;k-mer length&#62;
-&#60;fastq&#62;        : fastq file name
-&#60;output prefix&#62;: &#60;output directory name&#62;/&#60;file prefix&#62;
-&#60;k-mer length&#62; : k-mer length (odd number)
+> ./zec -read &#60;fastq&#62; -prefix &#60;output prefix&#62; -kmerlength &#60;k-mer length&#62;<br>
+&#60;fastq&#62;        : fastq file name<br>
+&#60;output prefix&#62;: &#60;output directory name&#62;/&#60;file prefix&#62;<br>
+&#60;k-mer length&#62; : k-mer length (odd number)<br>
 
-Paired-end reads
-> ./zec -read1 &#60;forward fastq&#62; -read2 &#60;reverse fastq&#62; -prefix &#60;output prefix&#62; -kmerlength &#60;k-mer length&#62;
-&#60;forward fastq&#62;: first read file of a paired-end fastq file
-&#60;reverse fastq&#62;: second read file of a paired-end fastq file
-&#60;output prefix&#62;: &#60;output directory name&#62;/&#60;file prefix&#62;
-&#60;k-mer length&#62; : k-mer length (odd number)
+Paired-end reads<br>
+> ./zec -read1 &#60;forward fastq&#62; -read2 &#60;reverse fastq&#62; -prefix &#60;output prefix&#62; -kmerlength &#60;k-mer length&#62;<br>
+&#60;forward fastq&#62;: first read file of a paired-end fastq file<br>
+&#60;reverse fastq&#62;: second read file of a paired-end fastq file<br>
+&#60;output prefix&#62;: &#60;output directory name&#62;/&#60;file prefix&#62;<br>
+&#60;k-mer length&#62; : k-mer length (odd number)<br>
 
-Run zec with no option to see the entire options.
+Run zec with no option to see the entire options.<br>
 
-Running ZEC on multiple nodes using MPI
+Running ZEC on multiple nodes using MPI<br>
 Launch single process on a node and bind the processes to their nodes
-Ex) MPICH 3.1.3 Hydra Version
+Ex) MPICH 3.1.3 Hydra Version<br>
 > mpirun -ppn 1 -bind-to board ./zec &#60;options&#62;
 
 --------------------------------------------------

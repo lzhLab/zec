@@ -60,4 +60,4 @@ Our empirical analysis shows that the k value that satisfies the following two c
 --------------------------------------------------
 Bug Reports:
 --------------------------------------------------
-Dr Liang Zhao <s080011@e.ntu.edu.sg>
+Dr. Zhao <s080011@e.ntu.edu.sg>

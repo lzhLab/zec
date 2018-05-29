@@ -31,7 +31,7 @@ Type make.
 How to Run ZEC 
 --------------------------------------------------
 Single-end reads or merged paired-end reads
-> ./zec -read <fastq> -prefix <output prefix> -kmerlength <k-mer length>
+> ./zec -read &#60;fastq&#62; -prefix <output prefix> -kmerlength <k-mer length>
 <fastq>        : fastq file name
 <output prefix>: <output directory name>/<file prefix>
 <k-mer length> : k-mer length (odd number)

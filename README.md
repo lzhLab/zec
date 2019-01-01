@@ -1,7 +1,6 @@
 ZEC: Mining statistically-solid k-mers for accurate NGS error correction
 
-The paper has been published in BMC Genomic at rdcu.be/be2c5
----
+The paper has been published in BMC Genomic at https://rdcu.be/be2c5
 
 ZEC is developed based on the BLESS, which is developed by ESCAD Group, Computational Comparative Genomics Lab, and IMPACT Group in Univsersity of Illinois at Urbana-Champaign
 
